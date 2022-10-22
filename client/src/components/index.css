@@ -38,3 +38,15 @@ body{
     margin-top: 10px;
     font-size: 12px;
 }
+
+#buyersList{
+    margin-top: 10px;
+}
+
+#prodStats{
+    margin-top: 10px;
+}
+
+#prodfill{
+    object-fit: cover !important;
+}

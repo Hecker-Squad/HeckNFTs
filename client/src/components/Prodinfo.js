@@ -9,7 +9,7 @@ function Prodinfo() {
                     <div
                         className="card card-compact w-96 bg-accent-content shadow-2xl border border-gray-300"
                         id="prod-pic"
-                        style={{ height: "450px", width: "500px" }}>
+                        style={{ height: "500px", width: "500px" }}>
                         <div className="card-body">
                             <i className="fab fa-ethereum" style={{ color: "rgb(104, 104, 104)" }} />
                         </div>
@@ -25,7 +25,7 @@ function Prodinfo() {
                             {/* Account info will be seller info but without edit account options */}
                             Bored Apes NFT Club
                         </a>
-                        <div className="stats bg-primary-content text-bg-neutral-content shadow-md border border-gray-300">
+                        <div className="stats bg-primary-content text-bg-neutral-content shadow-md border border-gray-300" id="prodStats">
                             <div className="stat">
                                 <div className="stat-title">Current Price</div>
                                 <div className="stat-value text-bg-neutral-focus" id="price-logo">
@@ -55,6 +55,84 @@ function Prodinfo() {
                                             <i className="fas fa-tag "></i>Make an offer
                                         </button>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listOfBuyers">
+                            <div class="overflow-x-auto shadow-md sm:rounded-lg w-4/5 border border-gray-300" id="buyersList">
+                                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-200 dark:text-gray-400">
+                                        <tr>
+                                            <th scope="col" class="py-3 px-6">
+                                                Name
+                                            </th>
+                                            <th scope="col" class="py-3 px-6">
+                                                Date of Buying
+                                            </th>
+                                            <th scope="col" class="py-3 px-6">
+                                                Contract Number
+                                            </th>
+                                            <th scope="col" class="py-3 px-6">
+                                                Issue Number
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-white border-b dark:bg-white dark:border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-300">
+                                            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                                                Username1
+                                            </th>
+                                            <td class="py-4 px-6">
+                                                dd/mm/yyyy
+                                            </td>
+                                            <td class="py-4 px-6">
+                                                Contract number generated randomly
+                                            </td>
+                                            <td class="py-4 px-6">
+                                                $2999
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white border-b dark:bg-white dark:border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-300">
+                                            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                                                Username2
+                                            </th>
+                                            <td class="py-4 px-6">
+                                                dd/mm/yyyy
+                                            </td>
+                                            <td class="py-4 px-6">
+                                                Contract number generated randomly
+                                            </td>
+                                            <td class="py-4 px-6">
+                                                $1999
+                                            </td>
+
+                                        </tr>
+                                        <tr class="bg-white dark:bg-white hover:bg-gray-50 dark:hover:bg-gray-300">
+                                            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                                                Username3
+                                            </th>
+                                            <td class="py-4 px-6">
+                                                dd/mm/yyyy
+                                            </td>
+                                            <td class="py-4 px-6">
+                                                Contract number generated randomly
+                                            </td>
+                                            <td class="py-4 px-6">
+                                                $99
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="description-box">
+                            <div className="collapse">
+                                <input type="checkbox" className="peer" />
+                                <div className="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
+                                    {/* Click me to show/hide content */}
+                                </div>
+                                <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
+                                    {/* <p>hello</p> */}
                                 </div>
                             </div>
                         </div>

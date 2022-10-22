@@ -1,9 +1,10 @@
 import Prodinfo from "./Components/Prodinfo.js";
+import Navbar from "./Components/Navbar.js";
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Prodinfo />
-      <h1>Hello</h1>
     </div>
   );
 }
