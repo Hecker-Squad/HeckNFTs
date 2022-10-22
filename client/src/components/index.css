@@ -50,3 +50,7 @@ body{
 #prodfill{
     object-fit: cover !important;
 }
+
+#logo{
+    margin-right: 15px;
+}
