@@ -21,13 +21,13 @@ function Prodinfo() {
                         <h1 className="text-4xl font-bold" id="title-text">
                             Bored Ape #453
                         </h1>
-                        <a role="button" className="btn btn-info btn-sm" id="seller-link" href="seller.html">
+                        <a role="button" className="btn btn-primary btn-sm" id="seller-link" href="seller.html">
                             {/* Account info will be seller info but without edit account options */}
                             Bored Apes NFT Club
                         </a>
                         <div className="stats bg-primary-content text-bg-neutral-content shadow-md border border-gray-300" id="prodStats">
                             <div className="stat">
-                                <div className="stat-title">Current Price</div>
+                                <div className="stat-title text-gray-600">Current Price</div>
                                 <div className="stat-value text-bg-neutral-focus" id="price-logo">
                                     <img
                                         src="https://openseauserdata.com/files/6f8e2979d428180222796ff4a33ab929.svg"
