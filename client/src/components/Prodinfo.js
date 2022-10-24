@@ -7,9 +7,9 @@ function Prodinfo() {
             <div className="hero min-h-screen bg-accent-content">
                 <div className="hero-content flex-col lg:flex-row">
                     <div
-                        className="card card-compact w-96 bg-accent-content shadow-2xl border border-gray-300"
+                        className="card card-compact w-96 bg-accent-content shadow-2xl border border-gray-300 lg:max-w-sm lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
                         id="prod-pic"
-                        style={{ height: "500px", width: "500px" }}>
+                        style={{ height: "50%", width: "50%" }}>
                         <div className="card-body">
                             <i className="fab fa-ethereum" style={{ color: "rgb(104, 104, 104)" }} />
                         </div>
@@ -17,15 +17,15 @@ function Prodinfo() {
                             <img src={prodimage} alt="nftheh" />
                         </figure>
                     </div>
-                    <div>
-                        <h1 className="text-4xl font-bold" id="title-text">
+                    <div className="flex flex-col md:w-fit justify-self-auto sm:w-screen">
+                        <h1 className="text-4xl font-bold w-fit" id="title-text">
                             Bored Ape #453
                         </h1>
-                        <a role="button" className="btn btn-primary btn-sm" id="seller-link" href="seller.html">
+                        <a role="button" className="btn btn-primary btn-sm w-fit" id="seller-link" href="seller.html">
                             {/* Account info will be seller info but without edit account options */}
                             Bored Apes NFT Club
                         </a>
-                        <div className="stats bg-primary-content text-bg-neutral-content shadow-md border border-gray-300" id="prodStats">
+                        <div className="stats bg-primary-content text-bg-neutral-content shadow-md border border-gray-300 w-fit" id="prodStats">
                             <div className="stat">
                                 <div className="stat-title text-gray-600">Current Price</div>
                                 <div className="stat-value text-bg-neutral-focus" id="price-logo">
@@ -38,28 +38,26 @@ function Prodinfo() {
                                     />
                                     <span id="eth-price">0.03</span>
                                 </div>
-                                <div className="button-wrapper flex justify-center">
-                                    <div className="button-1">
-                                        <div className="stat-actions">
+                                <div className="flex button-wrapper w-fit flex space-around justify-center md:flex-row flex-col">
+                                    <div className="button-1 p-5 md:p-2">
                                             <button
-                                                className="btn btn-wide gap-2 btn-primary"
+                                                className="btn btn-wide btn-primary"
                                                 style={{ color: "white" }}
                                             >
                                                 <i className="fas fa-wallet"></i>
                                                 Buy now
                                             </button>
-                                        </div>
                                     </div>
-                                    <div className="button-2">
-                                        <button className="btn btn-outline btn-wide btn-primary gap-2">
+                                    <div className="button-2 p-5 md:p-2">
+                                        <button className="btn btn-outline btn-wide btn-primary">
                                             <i className="fas fa-tag "></i>Make an offer
                                         </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="listOfBuyers">
-                            <div class="overflow-x-auto shadow-md sm:rounded-lg w-4/5 border border-gray-300" id="buyersList">
+                        <div class="listOfBuyers max-w-screen">
+                            <div class="overflow-x-auto w-fit max-w-screen shadow-md sm:rounded-lg w-4/5 border border-gray-300" id="buyersList">
                                 <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-200 dark:text-gray-400">
                                         <tr>
