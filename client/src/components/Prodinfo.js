@@ -40,17 +40,20 @@ function Prodinfo() {
                                 </div>
                                 <div className="flex button-wrapper w-fit flex space-around justify-center md:flex-row flex-col">
                                     <div className="button-1 p-5 md:p-2">
-                                            <button
-                                                className="btn btn-wide btn-primary"
-                                                style={{ color: "white" }}
-                                            >
-                                                <i className="fas fa-wallet"></i>
-                                                Buy now
-                                            </button>
+                                        <button
+                                            className="btn btn-wide btn-primary"
+                                            style={{ color: "white" }}
+                                        >
+                                            <i className="fas fa-wallet"></i>
+                                            {/* blank character here */}
+                                            ‍‍ Buy now
+                                        </button>
                                     </div>
                                     <div className="button-2 p-5 md:p-2">
                                         <button className="btn btn-outline btn-wide btn-primary">
-                                            <i className="fas fa-tag "></i>Make an offer
+                                            <i className="fas fa-tag "></i>
+                                            {/* blank character here */}
+                                            ‍‍ Make an offer
                                         </button>
                                     </div>
                                 </div>
