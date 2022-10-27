@@ -49,3 +49,12 @@ body{
 #logo{
     margin-right: 15px;
 }
+
+#cardimgstyle{
+    scale: 1;
+}
+
+#cardimgstyle:hover{
+    transition:  0.3s ease-in-out;
+    scale: 1.1;
+}
