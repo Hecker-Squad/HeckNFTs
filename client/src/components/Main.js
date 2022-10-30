@@ -1,13 +1,15 @@
 import carousel1 from "./Assets/carousel-1.jpg";
-
+import prodinfo from "./Assets/unnamed.png";
+import { useNavigate } from "react-router-dom";
 function Main() {
+    const navigate = useNavigate();
     return (
         <div className="main">
             <div className="main-carousel">
                 <div className="carousel w-full">
                     <div id="slide1" className="carousel-item relative w-full space-x-5 p-4">
-                        <div className="card card-compact w-auto bg-gray-200 text-black shadow-xl">
-                            <figure><img src={carousel1} style={{ width: "400px", height: "350px", objectFit: "cover" }} id="cardimgstyle" alt="Shoes" /></figure>
+                        <div className="card card-compact w-auto bg-gray-200 text-black shadow-xl" onClick={() => navigate("/prodinfo")}>
+                            <figure><img src={prodinfo} style={{ width: "400px", height: "350px", objectFit: "cover" }} id="cardimgstyle" alt="Shoes" /></figure>
                             <div className="card-body">
                                 <h3 className="card-title">Art name</h3>
                                 <p>Price</p>
