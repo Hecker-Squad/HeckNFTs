@@ -1,12 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Prodinfo from "./Components/Prodinfo.js";
-import Navbar from "./Components/Navbar.js";
-import Footer from "./Components/Footer.js";
-import Landing from "./Components/Landing.js";
-import UserAcc from "./Components/UserAcc.js";
-import Main from "./Components/Main.js";
-import Forms from "./Components/Forms.js";
-
+import Prodinfo from "./components/Prodinfo.js";
+import Navbar from "./components/Navbar.js";
+import Footer from "./components/Footer.js";
+import Landing from "./components/Landing.js";
+import UserAcc from "./components/UserAcc.js";
+import Main from "./components/Main.js";
+import Forms from "./components/Forms.js";
 
 function App() {
   return (

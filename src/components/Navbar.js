@@ -7,7 +7,10 @@ const Navbar = () => {
       <div className="navbar bg-white">
         <div className="flex-1">
           <Link to="/">
-            <a className="btn btn-ghost normal-case text-xl text-black" href="/">
+            <a
+              className="btn btn-ghost normal-case text-xl text-black"
+              href="/"
+            >
               <img
                 src={logo}
                 alt="logo"
@@ -31,21 +34,23 @@ const Navbar = () => {
             <div className="navbar-start"></div>
             <div className="navbar-center hidden lg:flex bg-white">
               <ul className="menu menu-horizontal pr-10 text-black">
-                <li>
-                  <a href="landing.html">Home</a>
-                </li>
+                <Link to="/">
+                  <li>
+                    <a href="/">Home</a>
+                  </li>
+                </Link>
 
-                <li>
-                  <a href="collection.html">Collection</a>
-                </li>
+                <Link to="/explore">
+                  <li>
+                    <a href="/">Explore</a>
+                  </li>
+                </Link>
 
-                <li>
-                  <a href="forum.html">Forum</a>
-                </li>
-
-                <li>
-                  <a href="support.html">Contact Us</a>
-                </li>
+                <Link to="/create">
+                  <li>
+                    <a href="/">Create NFT</a>
+                  </li>
+                </Link>
               </ul>
             </div>
             <div className="navbar-end">
@@ -70,10 +75,9 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <a href="favourites.js">Favourites</a>
-                  </li>
-                  <li>
-                    <a href="watchlist.js">Watch List</a>
+                    <a className="justify-between" href="profile.js">
+                      Log Out
+                    </a>
                   </li>
                 </ul>
               </div>
