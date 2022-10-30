@@ -7,15 +7,15 @@ const Navbar = () => {
       <div className="navbar bg-white">
         <div className="flex-1">
           <Link to="/">
-          <a className="btn btn-ghost normal-case text-xl text-black" href="/">
-            <img
-              src={logo}
-              alt="logo"
-              id="logo"
-              style={{ height: "30px", width: "30px" }}
-            />
-            Heck NFT's
-          </a>
+            <a className="btn btn-ghost normal-case text-xl text-black" href="/">
+              <img
+                src={logo}
+                alt="logo"
+                id="logo"
+                style={{ height: "30px", width: "30px" }}
+              />
+              Heck NFT's
+            </a>
           </Link>
           <div className="form-control hidden md:flex">
             <input
@@ -63,9 +63,11 @@ const Navbar = () => {
                   className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
                 >
                   <li>
-                    <a className="justify-between" href="profile.js">
-                      Profile
-                    </a>
+                    <Link to="/userInfo">
+                      <a className="justify-between" href="profile.js">
+                        Profile
+                      </a>
+                    </Link>
                   </li>
                   <li>
                     <a href="favourites.js">Favourites</a>
