@@ -1,10 +1,25 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ethers } from "ethers";
+import supabase from "./client";
+import UserCard from "./Useracccard.js";
+import "./index.css";
 
 const UserAcc = () => {
   const [address, setAddress] = useState("No address");
   const [collected, setCollected] = useState(true);
   const [created, setCreated] = useState(false);
+  const [nfts, setNfts] = useState([]);
+
+  useEffect(() => {
+    const fetchNFTs = async () => {
+      let { data, error } = await supabase.from(`nfts`).select();
+      if (error) console.log(error);
+      setNfts(...nfts, data);
+      console.log("data:", data);
+    };
+    getAddr();
+    fetchNFTs();
+  }, []);
 
   const getAddr = async () => {
     const [account] = await window.ethereum.request({
@@ -37,7 +52,7 @@ const UserAcc = () => {
         >
           <img
             src="https://cryptologos.cc/logos/ethereum-eth-logo.svg"
-            alt = "ethlogo"
+            alt="ethlogo"
             width={"15"}
             className="mr-2"
           />
@@ -67,8 +82,12 @@ const UserAcc = () => {
             Created
           </p>
         </div>
-        <section className="min-h-[60vh]">
-
+        <section className="min-h-[60vh] flex">
+          {nfts.map((e, index) => (
+            <div key={index}>
+              <UserCard name = {e.nftName} price = {e.Price} owner = {e.ownerid} id="useracccard"/>
+            </div>
+          ))}
         </section>
       </div>
     </div>

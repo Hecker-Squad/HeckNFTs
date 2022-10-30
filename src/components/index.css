@@ -1,60 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     background-color: whitesmoke;
 }
 
-.main-wrapper{
+.main-wrapper {
     width: 100vw;
     height: 100vh;
 }
 
-#prod-pic{
+#prod-pic {
     box-shadow: 0px 0px 5px 1px rgb(190, 190, 190);
 
 }
 
-#eth-price{
+#eth-price {
     font-size: 1.5rem;
 }
 
-#title-text{
+#title-text {
     color: rgb(70, 70, 70);
 }
 
-#seller-link{
+#seller-link {
     margin-top: 10px;
     font-size: 12px;
 }
 
-#buyersList{
+#buyersList {
     margin-top: 10px;
 }
 
-#prodStats{
+#prodStats {
     margin-top: 10px;
 }
 
-#prodfill{
+#prodfill {
     object-fit: cover !important;
 }
 
-#logo{
+#logo {
     margin-right: 15px;
 }
 
-#cardimgstyle{
+#cardimgstyle {
     scale: 1;
 }
 
-#cardimgstyle:hover{
-    transition:  0.3s ease-in-out;
+#cardimgstyle:hover {
+    transition: 0.3s ease-in-out;
     scale: 1.1;
+}
+
+#useracccard {
+    height: 200px;
+    width: 200px;
 }
