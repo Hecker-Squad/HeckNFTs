@@ -6,7 +6,6 @@ import Landing from "./Components/Landing.js";
 import UserAcc from "./Components/UserAcc.js";
 import Main from "./Components/Main.js";
 import Forms from "./Components/Forms.js";
-import Card from "./Components/Card.js";
 
 
 function App() {
